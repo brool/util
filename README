@@ -1,4 +1,4 @@
 Various utilities:
 
 scan_directory.py:  scans a file / disk, looking for blocks that might be directories
-config_options.py:  given a kernel source directory, will print out the options that are necessary to mirror the currnet module list
+config_options.py:  given a kernel source directory, will print out the options that are necessary to mirror the current module list
