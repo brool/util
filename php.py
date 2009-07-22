@@ -4,13 +4,13 @@ import simplejson as json
 class PHP:
     """This class provides a stupid simple interface to PHP code."""
     
-    def __init__(self, prefix=None, postfix=None):
+    def __init__(self, prefix="", postfix=""):
         """prefix = optional prefix for all code (usually require statements)
         postfix = optional postfix for all code
         Semicolons are not added automatically, so you'll need to make sure to put them in!"""
         
-        self.prefix = prefix or ""
-        self.postfix = postfix or ""
+        self.prefix = prefix
+        self.postfix = postfix
 
     def __submit(self, code):
         (out, inp) = popen2.popen2("php")
