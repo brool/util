@@ -14,7 +14,7 @@ class PHP:
 
     def __submit(self, code):
         (out, inp) = popen2.popen2("php")
-        print >>inp, "<? "
+        print >>inp, "<?php "
         print >>inp, self.prefix
         print >>inp, code
         print >>inp, self.postfix
